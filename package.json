@@ -1,0 +1,16 @@
+{
+  "name": "vibes",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle -o dist",
+    "dev": "microbundle watch -o dist"
+  },
+  "devDependencies": {
+    "microbundle": "^0.8.3"
+  },
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
