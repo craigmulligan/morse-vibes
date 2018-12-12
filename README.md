@@ -1,4 +1,4 @@
-This is a tiny library that converts dotdash notation to the [browser vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API)
+This is a tiny library that converts dotdash notation to the [browser vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API) 📳
 
 The mapping is as follows:
 
@@ -21,7 +21,7 @@ const mapping = {
     _: 500,
     '.': 250,
     ' ': 250,
-    '~': 10,
+    '~': 10, // the tilda is used as the small gap between vibration characters
   }
 vibes('_. ._', { mapping })
 ```
