@@ -1,6 +1,8 @@
-This is a tiny library that converts dotdash notation to the [browser vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API) 📳
+# Vibes 📳
 
-The mapping is as follows:
+> a tiny library that converts dotdash notation to the [browser vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API)
+
+The default mapping is as follows:
 
 | symbol           | value              |
 | ---------------- | ------------------ |
@@ -10,19 +12,19 @@ The mapping is as follows:
 
 All no space characters are seperated by a 30ms space. (see tests for details)
 
-```
+```javascript
 const vibes = require('vibes')
 
-vibes('_. ._') // will create the following vibration pattern. [1000, 30, 500, 1000, 500, 30, 1000]  
+vibes('_. ._') // will create the following vibration pattern. [1000, 30, 500, 1000, 500, 30, 1000]
 
 // with custom mapping
 
 const mapping = {
-    _: 500,
-    '.': 250,
-    ' ': 250,
-    '~': 10, // the tilda is used as the small gap between vibration characters
-  }
+  _: 500,
+  '.': 250,
+  ' ': 250,
+  '~': 10, // the tilda is used as the small gap between vibration characters
+}
 vibes('_. ._', { mapping })
 ```
 
